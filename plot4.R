@@ -33,7 +33,7 @@ plot(1:length(Voltage), Voltage, col = "black", type = "l",
 axis(side = 1, at = ticks, labels = c("Thu","Fri","Sat" )) 
 axis(side = 2);
 
-
+mtext("datetime", side=1, line=2)
 matplot( cbind(submeter1, submeter2, submeter3), type="l",lty=1,
          ylab = "Energy sub metering", xlab = "", xaxt="n", col=c("black","red","blue"))
 legend("topright", lty=1, legend = c("Sub_metering_1","Sub_metering_2","Sub_metering_3"),col=c("black","red","blue"))
@@ -45,3 +45,4 @@ plot(1:length(Voltage), Global_reactive_power, col = "black", type = "l",
      ylab = "Global_reactive_power", xlab = "", xaxt="n")
 axis(side = 1, at = ticks, labels = c("Thu","Fri","Sat" )) 
 axis(side = 2);
+mtext("datetime", side=1, line=2)
